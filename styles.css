@@ -22,7 +22,7 @@ h1 {
 ************************** */
 
 #question {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     width: 50%;
     text-align: center;
     padding: 40px;
@@ -77,10 +77,11 @@ h1 {
     font-size: 18px;
     cursor:pointer;
     box-shadow: 5px 5px 0px darkgoldenrod;
+    font-family: arial
     
 }
 #answer ul li:hover {
-    color: purple;
+    color: goldenrod;
 }
 
 /* **************************
@@ -102,6 +103,7 @@ h1 {
     margin: 5px;
     text-align: center;
     font-size: 20px;
+    font-family: arial;
     
 }
 
@@ -111,16 +113,20 @@ h1 {
 
 #reset {
 
-    width: 10%;
+    width: 12%;
     background-color: black;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     margin: 10px auto;
     border: 5px solid goldenrod;
     cursor:pointer;
     box-shadow: 5px 5px 0px darkgoldenrod;
+    font-family: arial;
 
+}
+#reset:hover {
+    color: crimson;
 }
 
 /* **************************

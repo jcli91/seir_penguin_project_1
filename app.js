@@ -51,6 +51,22 @@ const chooseAnswer = (event, question) => {
 
 const setBoard = (q) => {
 
+    //Update player scores
+    $p1score.text(state.player1)
+    $p2score.text(state.player2)
+    
+
+    //check win condition
+    console.log($p1score.text())
+    if ($p1score.text() == 5 ) {
+        alert("player 1 wins")
+        location.reload()
+    } else if ($p2score.text() == 5){
+        alert("player 2 wins")
+        location.reload()
+    }
+
+
     //Getting a random question
     const randomIndex = Math.floor(Math.random() * q.length)
     const randomQuestion = q[randomIndex]
@@ -62,9 +78,9 @@ const setBoard = (q) => {
     $c.text(randomQuestion.c)
     $d.text(randomQuestion.d)
 
-    //Update player scores
-    $p1score.text(state.player1)
-    $p2score.text(state.player2)
+    
+
+    
 
     $("li").off()
     $("li").on("click", () => {
@@ -72,11 +88,11 @@ const setBoard = (q) => {
     })
    
 }
-const winCondition = () => {
-    if ($("#player1").children.innerText == 1) {
-        alert("player1 wins")
-    }
-}
+// const winCondition = () => {
+    // if ($("#player1").children.innerText == 1) {
+    //     alert("player1 wins")
+    // }
+// }
 
 
 $("#reset").on("click", () => {
