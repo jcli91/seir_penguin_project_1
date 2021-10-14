@@ -11,6 +11,7 @@ Explain what is your project here, what does it do, etc.
 - CSS
 - JS
 - jQuery
+- Contentful
 
 ## Challenges
 
