@@ -10,11 +10,7 @@ u {
 h1 {
     font-size:70px;
     text-align: center;
-    color: goldenrod;
-    
-    
-    
-    
+    color: goldenrod; 
 }
 
 /* **************************
@@ -32,9 +28,6 @@ h1 {
     font-size: 24px;
     margin: 50px auto;
     box-shadow: 5px 5px 0px darkgoldenrod;
-    
-    
-
 }
 
 /* **************************
@@ -51,8 +44,7 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 20px 20px 20px 20px;
-    border: 5px solid goldenrod;
-    
+    border: 5px solid goldenrod;   
 }
 #answer ul {
     display: flex;
@@ -61,8 +53,6 @@ h1 {
     justify-content: space-around;
     list-style: none;
     padding-left: 0;
-    
-   
 }
 
 #answer ul li {
@@ -78,12 +68,15 @@ h1 {
     cursor:pointer;
     box-shadow: 5px 5px 0px darkgoldenrod;
     font-family: arial
-    
 }
 #answer ul li:hover {
     color: goldenrod;
 }
-
+#answer ul li:active {
+    background-color: goldenrod;
+    box-shadow: 5px 5px 0px darkgoldenrod#666;
+    transform: translateY(3px);
+}
 /* **************************
 ** scoreboard
 ************************** */
@@ -95,7 +88,6 @@ h1 {
     justify-content: center;
     margin: 20px auto;
     border: 5px solid goldenrod;
-    
 }
 #player1, #player2 {
     width: 50%;
@@ -104,7 +96,6 @@ h1 {
     text-align: center;
     font-size: 20px;
     font-family: arial;
-    
 }
 
 /* **************************
@@ -112,7 +103,6 @@ h1 {
 ************************** */
 
 #reset {
-
     width: 12%;
     background-color: black;
     color: white;
@@ -121,29 +111,28 @@ h1 {
     margin: 10px auto;
     border: 5px solid goldenrod;
     cursor:pointer;
-    box-shadow: 5px 5px 0px darkgoldenrod;
+    /* box-shadow: 5px 5px 0px darkgoldenrod; */
     font-family: arial;
-
 }
 #reset:hover {
     color: crimson;
 }
-
+#reset:active {
+    background-color: crimson;
+    box-shadow: 0px 5px 5px darkgoldenrod;
+    transform: translateY(4px);
+}
 /* **************************
 ** background
 ************************** */
 body {
-    background-image: url("https://t4.ftcdn.net/jpg/02/49/74/97/360_F_249749742_xwulcjcBmMBJw8KDgA6b5Feg66NHD2L1.jpg");
-    
-    
-    
+    background-image: url("https://t4.ftcdn.net/jpg/02/49/74/97/360_F_249749742_xwulcjcBmMBJw8KDgA6b5Feg66NHD2L1.jpg");    
 }
 
 @media (max-width: 568px) {
     h1{
         font-size: 2.1rem;
-        padding: 10px;
-        
+        padding: 10px; 
     }
     #question {
         font-size: 15px;
@@ -152,7 +141,6 @@ body {
         width:98%;
     }
     #answer {
-       
         padding: 1px;
         margin: 1px auto;
         width: 98%;
@@ -164,7 +152,6 @@ body {
         width: 100%;
     }
     #answer ul li {
-
         padding: 1px;
         margin: 10px auto;
         font-size: 14px;
@@ -172,7 +159,6 @@ body {
     #answer ul li:hover {
         color: white;
     }
-
     #scores {
         padding: 1px;
         margin: 10px auto;
@@ -181,8 +167,10 @@ body {
     #reset {
         padding: 1px;
         margin: 10px auto;
-        width: 70%
+        width: 70%;
     }
-
+    body {
+        background-size: contain;
+    }
 
   }
